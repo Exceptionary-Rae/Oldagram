@@ -43,6 +43,7 @@ header {
 
 header .avatar-img {
     margin-top: 0.5rem;
+    box-shadow: 0 0 2px black;
 }
 
 /*-----------
