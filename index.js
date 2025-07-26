@@ -28,3 +28,33 @@ const posts = [
     }
 ]
 
+const main = document.getElementById("main-section")
+
+
+render()
+
+
+function render() {
+    main.innerHTML = ''
+    for (let i = 0; i < posts.length; i++) {
+        main.innerHTML += `<section class="post">
+                    <section class="author-info">
+                        <img class="avatar-img" src="${posts[i].avatar}" alt="${posts[i].name}'s avatar">
+                        <div class="info-text">
+                            <p class="bold name">${posts[i].name}</p>
+                            <p class="location">${posts[i].location}</p>
+                        </div>
+                    </section>
+                    <img class="post-img" src="${posts[i].post}" alt="${posts[i].name}'s post">
+                    <div class="post-content">
+                        <div class="icon-container">
+                            <img class="btn-icon" src="images/icon-heart.png">
+                            <img class="btn-icon" src="images/icon-comment.png">
+                            <img class="btn-icon" src="images/icon-dm.png">
+                        </div>
+                        <p class="bold like-counter">${posts[i].likes} likes</p>
+                        <p class="comment"><span class="bold username">${posts[i].username}</span> ${posts[i].comment}</p>
+                    </div>
+                </section>`
+    }
+}

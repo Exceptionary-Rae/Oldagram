@@ -45,9 +45,9 @@ header .avatar-img {
     margin-top: 0.5rem;
 }
 
-/*---------- 
-    POST 
-----------*/
+/*-----------
+    POSTS 
+-----------*/
 
 .post {
     background: white;
@@ -74,6 +74,11 @@ header .avatar-img {
     gap: 0.5rem;
 }
 
+.icon-container {
+    display: flex;
+    gap: 0.75rem;
+}
+
 .btn-icon {
     width: 2rem;
     height: 2rem;
@@ -83,6 +88,7 @@ header .avatar-img {
 .btn-icon:focus {
     opacity: 65%;
 }
+
 
 /* Hide Scrollbar on mobile */
 @media (max-width: 600px) {
