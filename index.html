@@ -1,9 +1,39 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="viewport=device-width, initial-scale=1">
     </head>
     <body>
-        <img src="images/logo.png">
+        <div id="whole-container">
+            <header>
+                <img class="logo-img" src="images/logo.png" alt="Oldagram logo">
+                <img class="avatar-img" src="images/user-avatar.png" alt="your avatar">
+            </header>
+            <main>
+                <section class="post">
+                    <section class="author-info">
+                        <img class="avatar-img" src="images/avatar-vangogh.jpg" alt="Vincent Van Gogh's avatar">
+                        <div class="info-text">
+                            <p class="bold name">Vincent Van Gogh</p>
+                            <p class="location">Zudert, Netherlands</p>
+                        </div>
+                    </section>
+                    <img class="post-img" src="images/post-vangogh.jpg" alt="Vincent Van Gogh's post">
+                    <div class="post-content">
+                        <div class="icon-container">
+                            <img class="btn-icon" src="images/icon-heart.png">
+                            <img class="btn-icon" src="images/icon-comment.png">
+                            <img class="btn-icon" src="images/icon-dm.png">
+                        </div>
+                        <p class="bold like-counter">21,492 likes</p>
+                        <p class="caption"><span class="bold username">vincey1853</span> just took a few mushrooms lol</p>
+                    </div>
+                </section>
+            </main>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
